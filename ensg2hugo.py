@@ -27,6 +27,7 @@ else:
     column = 1
     geneset = sys.argv[1]
 
+pd.set_option('display.max.rows', None)
 geneset = pd.read_csv(geneset)
 geneset.iloc[:, column] = geneset.iloc[:, column].astype(str).str.replace(r'(\.\d*)', '')
 geneset.iloc[:, column] = geneset.iloc[:, column].str.strip('"')
