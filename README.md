@@ -11,7 +11,7 @@
 - *The script is created to be compatible with a gtf file named "Homo_sapiens.GRCh37.75.gtf". This file can be downloaded onto your server and within your working directory by using the "curl" command. Use the following to obtain the file: 'curl http://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/Homo_sapiens.GRCh37.75.gtf.gz'. The gtf file will then need to be unzipped, which can be done using the gunzip command.*
 - *Within your directory that contains both the "ensg2hugo.py" file and the gtf file, you must also provide a unit test file for the script to run with. The unit test file may be downloaded from the following link: https://github.com/davcraig75/unit. The file should be a csv file named "expres.anal.csv". Alternatively, the unit test csv file may also be found in the cloned repository already.*
 - *Specific python packages will also be needed to ensure the program can be run. The needed packages will be listed below under "Dependencies".*
-- *To run the script and create the file, run the following on your command line: ensg2hugo.py -f2 expres.anal.csv >expres.anal.hugo.csv*
+- *To run the script and create the file, run the following on your command line: ./ensg2hugo.py -f2 expres.anal.csv >expres.anal.hugo.csv*
 
 **Dependencies:**
 - *sys python package*
